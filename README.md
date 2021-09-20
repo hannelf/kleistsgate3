@@ -27,10 +27,6 @@ Publikum og brukere av denne nettsiden vil først og fremst være beboerene i kl
 
 6. FUNCTIONAL AND NON-FUNCTIONAL REQUIREMENTS 
 
-FUNCTIONAL:
-- .
 
-NON-FUNCTIONAL: 
-- 
 
 
