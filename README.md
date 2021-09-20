@@ -28,16 +28,24 @@ Publikum og brukere av denne nettsiden vil først og fremst være beboerene i kl
 6. FUNCTIONAL AND NON-FUNCTIONAL REQUIREMENTS 
 
 Functional
+- Nettsidens førsteside skal ha en meny som gir oversikt over nettsidens funksjoner og valg
+- Nettsidens førsteside skal vise boretslaget sin lokasjon ved hjelp av google maps 
+- Nettsiden skal ha en oversikt over personer med ansvarsroller og deres kontaktinformasjon (mail, telefon, navn)
 -	Funksjon hvor man kan booke (fyll inn her hva som skal bookes, husker ikke om det var trappevask eller vaskemaskin eller bakgård eller hva det nå var vi snakka om)
 -	Systemet sender ut E-post angående viktig saker i boretslaget til de som har signa seg opp på nyhetsbrev (fjernes om vi ikke vil ha med sånn signe-up greier)
 -	Nettsiden skal ha en Digital oppslagstavle tilgjengelig for nettsidens publikum 
+-	Nettsiden skal ha en diskusjonstavle hvor beboere kan delta 
 -	Nettsiden skal ta i mot forslag fra beboere gjennom forslagsfunksjonen
 
 
+
 Non-funtional 
+- Ved klikk på ønsket funksjon i menyen skal bruker bli fraktet til ønsket side innen ??(her har jeg ikke nok kunnskap) sekunder
+- E-post ved kontaktinformasjon hos personer med ansvarsroller skal være klikkbar og ta brukeren viderer til preferert e-post app.
 -	E-post med bekreftelse på booking skal sendes innen 10 minutter
 -	E-post angående viktige saker sendes ut senest et døgn innen saken er opprettet på nettsiden 
 -	Oppslagstavle skal oppdateres maks 1 minutt etter boretslaget har registrert nyeheter, saker, oppdateringer og lignende.
+-	Diskusjonstavlen skal oppdateres automatisk innen 10 sekunder ved nye innlegg
 -	Bekreftelse for mottatt forslag igjennom forslagsfunksjonen skal vises på nettsiden senest 20 sekunder etter insendt forslag
 
 
