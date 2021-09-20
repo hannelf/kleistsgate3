@@ -24,4 +24,13 @@ Publikum og brukere av denne nettsiden vil først og fremst være beboerene i kl
 - Kontakt
 - Booking
 - Forslagsfunksjon
+
+6. FUNCTIONAL AND NON-FUNCTIONAL REQUIREMENTS 
+
+FUNCTIONAL:
+- .
+
+NON-FUNCTIONAL: 
 - 
+
+
