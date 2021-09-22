@@ -16,14 +16,23 @@ Publikum og brukere av denne nettsiden vil først og fremst være beboerene i kl
 
 
 5. CONTENT AND SITE ORGANIZATION
-- Bilder
-- Forside
-- Diskusjonstavle, kunngjøringer
-- Informasjon (kontakt, generell info)
-- Husregler
-- Kontakt
-- Booking
-- Forslagsfunksjon
+-	Forside: 
+Forsiden vil bestå av bilder av nabolaget som rullerer, navn og litt informasjon om borettslaget. Forsiden vil også bestå av en liten meny hvor man kan klikke seg inn ulike ting av behov. Poenget med disse er å få samlet alt på en plass, for å gjøre det lettere for beboerne og styret. Disse er listet under:
+
+-	Bilder: Et lite galleri av bilder fra borettslaget og dets fasiliteter rundt.
+
+-	Kunngjøringer: Dette vil være et underavsnitt hvor diverse kunngjøringer kan postes. For eksempel dugnad ol.  
+
+-	Diskusjonstavle: Dette vil være en «vegg» hvor beboere kan poste ulike saker og ting. Det kan også for eksempel være undergruppe for kjøp og salg.
+
+-	Informasjon: Her vil det ligge kontaktinformasjon på vaktmester, styreleder osv. Det vil også ligge generell informasjon om bygget og eventuelle samarbeidspartnere innen EL og VVS.
+
+-	Husregler: Her vil alle de satte borettslagsreglene være listet nedover.
+
+-	Booking: Her er det lett å få oversikt over når vaskekjelleren er ledig for booking av tid, samt andre ting som går på felleskapet. Man kan også booke det felles bursdagsrommet i bygget.
+
+-	Forslag: Her kan beboerne enkelt sende inn forslag til regler, evt endring av regler. De kan også komme med andre henvendelser som ikke er hastesak.
+
 
 6. FUNCTIONAL AND NON-FUNCTIONAL REQUIREMENTS 
 
