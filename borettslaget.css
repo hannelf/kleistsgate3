@@ -33,3 +33,19 @@ h1{
     border-top-width: 2px;
     margin-top: 20px;
 }
+
+
+#farge_FFEEEE{
+    color: #FFEEEE;
+    background-color: rgb(179, 179, 179);
+}
+
+#farge_4C8A93{
+    color: #4C8A93;
+    background-color: rgb(231, 231, 231);
+}
+
+#farge_77B4BC{
+    color: #77B4BC;
+    background-color: rgb(238, 238, 238);
+}
