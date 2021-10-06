@@ -14,10 +14,18 @@ h1{
     font-size: 2.5em;
 }
 
-#authors, #undertittel_3{
+#authors{
     padding-bottom: 20px;
     border-bottom-style: solid;
     border-bottom-color: palevioletred;
     border-bottom-width: 2px;
     margin-bottom: 20px;
+}
+
+#undertittel_4 {
+    padding-top: 20px;
+    border-top-style: solid;
+    border-top-color: palevioletred;
+    border-top-width: 2px;
+    margin-top: 20px;
 }
