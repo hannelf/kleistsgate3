@@ -14,12 +14,16 @@ h1{
     font-size: 2.5em;
 }
 
-#authors{
+#authors, #tittel {
     padding-bottom: 20px;
     border-bottom-style: solid;
     border-bottom-color: palevioletred;
     border-bottom-width: 2px;
     margin-bottom: 20px;
+}
+
+#tittel {
+    margin-top: 50px;
 }
 
 #undertittel_4 {
