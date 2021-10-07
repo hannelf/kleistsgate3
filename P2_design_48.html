@@ -151,23 +151,23 @@
                     <img src="img/booking-mockup.png" />
             
                 <h2>7. Minimumskrav Javascript</h2>
-                    <p>Nettsiden skal inneholde Flere individuelle JavaScript applikasjoner. På forsiden vil det ligge et bilde med rollovereffekt. 
-                       Dette vil være et bilde av nabolaget, hvor man beveger musen over bildet og får fram et annet bilde av bakgården. 
-                       Vi prøver først med rollovereffekt her, men går kanskje over til at en bukett bilder som rullerer på forsiden av seg selv. 
-                      
+                    <p>Nettsiden skal inneholde flere individuelle JavaScript applikasjoner. På forsiden vil det ligge et bilde med rollovereffekt. 
+                       Dette vil være et bilde av nabolaget hvor man kan bevege musen over bildet og få fram et annet bilde av bakgården. 
+                       Vi prøver først med rollovereffekt her, men går kanskje over til en bukett bilder som rullerer på forsiden av seg selv. 
+                      <br />
                        
-                       På «Booking» og «kontakt» vil det være to ganske like validatorer. Disse vil spørre om navn og leilighetsnummer fra 1 – 23. 
-                       Om For- eller etternavn mangler vil du ikke kunne sende inn melding eller booking. Det samme vil gjelde for leilighetsnummeret. 
-                       Dette for å ha full kontroll på hvem som booker eller sender inn en eventuell forespørsel/melding.
-
-                       «Booking» vil inneholde en bookingfunksjon hvor ledige tider for vasking og bakgård vil vises i grønt. Disse er klikkbare og et skjema for innskrivning av navn og leilighetsnummer dukker opp da u klikker inn og velger tidspunkt. 
-                       Ved hjelp av en function i .js vil vi prøve å tilordne tidspunktene til en rekke objekter og på denne måten vil de ledige tidene forsvinne fra siden. Etter midnatt vil de forsvunnede og brukte tidene igjen dukke opp klar for ny dag og ny booking. 
+                       På «Booking» og «Kontakt» vil det være to ganske like validatorer. Disse vil spørre om navn og leilighetsnummer fra 1 – 23. 
+                       Om fornavn eller etternavn mangler vil du ikke kunne sende inn melding eller booking. Det samme vil gjelde for leilighetsnummeret. 
+                       Dette er for å ha full kontroll på hvem som booker eller sender inn en eventuell forespørsel/melding.
+                        <br />
+                       «Booking» vil inneholde en bookingfunksjon hvor ledige tider for vasking og bakgård vil vises i grønt. Disse er klikkbare og et skjema for innskrivning av navn og leilighetsnummer dukker opp da du klikker inn og velger tidspunkt. 
+                       Ved hjelp av en funksjon i JavaScript vil vi prøve å tilordne tidspunktene til en rekke objekter og på denne måten vil de ledige tidene forsvinne fra siden. Etter midnatt vil de forsvunnede og brukte tidene igjen dukke opp klar for en ny dag med ny booking. 
                        Det vil altså bare være mulig å booke tid samme dag, da det ikke skal være mulighet å holde av tidsrom lang tid i forveien. Det vil også være en grense på hvor mange ledige tider hvert leilighetsnummer kan booke om dagen. 
-                       Vi tenker at maks 2 tidspunkter pr dag burde være en grei. Vasking vil ikke foregå mellom 2300-0600 da dette er stilletid i borettslaget.
-
+                       Vi tenker at maks 2 tidspunkter per dag burde være greit. Vasking vil ikke foregå mellom 23.00-06.00 da dette er stilletid i borettslaget.
+                        <br />
                        På galleri trenger vi en funksjon som forstørrer miniatyrbildene som ligger på siden ved klikk. Funksjonen skal endre størrelsen på et bilde og deretter skalere det tilbake til originalstørrelsen.
-                       Hvis bilde ikke er forstørret, forstørr bilde ved klikk.
-                       Hvis bilde er forstørret, hvis det er samme bilde som blir klikket på, forminsk til opprinnelig miniatyrtilstand.
+                       Hvis bildet ikke er forstørret, forstørr bilde ved klikk.
+                       Hvis bildet er forstørret og brukeren trykker utenfor bildeområdet eller krysset oppe i hjørnet, mink bildet tilbake til miniatyrstørrelse.
 
                     </p>
             
@@ -177,10 +177,10 @@
                 </p>
                 <img src="img/filstruktur-alt2.png" />
                 <p>
-                    Hovedsiden kommer til å være <i>index.html</i> og alle html dokumentene kommer til å ligge i rotmappa med <i>index.html</i>. Rotmappen heter "kleistsgate3". 
+                    Hovedsiden kommer til å være <i>index.html</i> og alle HTML dokumentene kommer til å ligge i rotmappa med <i>index.html</i>. Rotmappen heter "kleistsgate3". 
                     For bilder velger vi å sortere alle bildene i en egen <i>img</i> mappe, samtidig skal alle galleribildene legges i en egen <i>galleri</i> mappe under img mappen (<i>img/galleri/</i>) for å holde ting ryddig.
-                    Om vi velger å lagre en miniatyrversjon av alle bildene separat i stedet for å gjøre om størrelsen i html/css eller javascript vil disse filnavnene følge formatet <i>bildex_thumbnail.png</i>.
-                    All javascript blir lagret i en egen mappe kalt <i>js</i>, og det kan hende vi må lage flere javascript filer for å holde ting ordentlig ryddig.
+                    Om vi velger å lagre en miniatyrversjon av alle bildene separat i stedet for å gjøre om størrelsen i HTML/CSS eller JavaScript vil disse filnavnene følge formatet <i>bildex_thumbnail.png</i>.
+                    All JavaScript blir lagret i en egen mappe kalt <i>js</i>, og det kan hende vi må lage flere JavaScript filer for å holde ting ordentlig ryddig.
                 </p>
                 <p>
                     Plan:
