@@ -5,6 +5,12 @@ body{
     background-color: rgb(228, 255, 247);
 }
 
+img{
+    margin: auto;
+    max-width: 110ch;
+    max-height: auto;
+}
+
 p,h1,h2,h3,h4,li{
     font-family: sans-serif, serif;
     color: palevioletred;
