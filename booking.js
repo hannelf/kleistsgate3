@@ -5,8 +5,10 @@ var button = document.querySelector("button")
 
 
 function bookTime(){
-    button.style.backgroundColor="red"
+    //button.style.backgroundColor="red"
+    console.log("nice")
 }
+console.log("nice")
 
 //buttons.forEach(addEventListener("click", bookTime))
 
@@ -29,7 +31,7 @@ function makeButtons(){
 }
 
 makeButtons();
-
+console.log("nice")
 
               
 
