@@ -15,6 +15,7 @@ nav{
     width: 100%;
     background: #56b3ab;
 }
+
 label.logo{
     font-size: 50px;
     font-weight: bold;
@@ -22,29 +23,25 @@ label.logo{
     padding: 0 100px;
     line-height: 100px;
     
-    }
-    
-    nav ul{
+}
+
+nav ul{
     float: right;
     margin-right: 40px;
-    
-    }
-    
-    nav li{
+}
+
+nav li{
     display: inline-block;
     line-height: 100px;
     margin-left: 25px;
-    }
-    
-    nav a {
+}
+
+nav a{
     color: rgb(250, 250, 250);
     font-size: 35px;
     text-transform: uppercase;
     border: 3px solid transparent;
-
-    }
-    
-    
+} 
 
 .galleri{
     margin: 10px 50px;
@@ -57,14 +54,12 @@ label.logo{
     transition: 1s;
 }
 
-.galleri img:hover{
+.galleri img:hover {
     filter: grayscale(0);
     transform:scale(1.1)
 }
 
-
-
-.oppslagstavle {
+.oppslagstavle{
     position: fixed;
     left: 800px;
     top: 120px;
@@ -73,20 +68,16 @@ label.logo{
     background-color: #FFD1D1;
     border:1px solid #ccc;
     font:16px/26px Georgia, Garamond, Serif;
-    overflow:auto;
-    
+    overflow:auto; 
 }
 
-.beskjed.dato {
-
+.beskjed.dato{
 float: left;
 font-size: 15px;
 color: #1d1a1a;
-
 }
 
-.beskjed {
-    
+.beskjed{
     width: 80%;
     padding: 35px;
     margin: auto;
@@ -96,7 +87,7 @@ color: #1d1a1a;
     background-color: rgb(250, 237, 237);
 }
 
-#googlemaps {
+#googlemaps{
     position: absolute;
     left: 110px;
     top: 380px;
@@ -105,23 +96,26 @@ color: #1d1a1a;
     width:540px;   
 }
 
-
 .slide{
     position: absolute;
     left: 110px;
     top: 120px;
     height: 240px;
     width: 540px;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
+
 .slide .bilder{
     height: 100%;
     width: 100%;
-  }
+}
+
 .bilder img{
     height: 100%;
     width: 100%;
-  }
+}
 
-
+button{
+    color: white;
+    background-color: green;
+}
