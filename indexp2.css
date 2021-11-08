@@ -1,0 +1,56 @@
+body{
+    margin: auto;
+    margin-bottom: 5em;
+    max-width: 110ch;
+    background-color: rgb(228, 255, 247);
+}
+
+img{
+    margin: auto;
+    max-width: 110ch;
+}
+
+p,h1,h2,h3,h4,li{
+    font-family: sans-serif, serif;
+    color: palevioletred;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+#authors, #tittel {
+    padding-bottom: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: palevioletred;
+    border-bottom-width: 2px;
+    margin-bottom: 20px;
+}
+
+#tittel {
+    margin-top: 50px;
+}
+
+#undertittel_4 {
+    padding-top: 20px;
+    border-top-style: solid;
+    border-top-color: palevioletred;
+    border-top-width: 2px;
+    margin-top: 20px;
+}
+
+
+#farge_FFEEEE{
+    color: #FFEEEE;
+    background-color: rgb(216, 216, 216);
+}
+
+#farge_4C8A93{
+    color: #4C8A93;
+    background-color: rgb(240, 240, 240);
+}
+
+#farge_77B4BC{
+    color: #77B4BC;
+    background-color: rgb(238, 238, 238);
+}
