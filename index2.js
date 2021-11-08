@@ -12,5 +12,3 @@ const img = document.querySelectorAll('img');
         img[indexValue -1].style.display = "block";
       }
       slideShow();
-
-
