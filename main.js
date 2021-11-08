@@ -1,62 +1,16 @@
-/*
-BARE DRIT I DENNE formHandler FUNKSJONEN.
-DEN VAR FOR Å LAGRE TILBAKEMELDINGER PÅ SERVEREN, MEN VI HAR IKKE LOV
-TIL Å BRUKE DATABASER. ALTSÅ, KODEN ER UBRUKELIG. MORSOMT Å FINNE UT AV DET 
-PÅ P3 I STEDET FOR P2.
-Byttet den ut med en sendEpost funksjon. :)
-jeg sletter alt ubrukelig ting selv senere, bare lar det være her nå i tilfelle 
-jeg kan gjenbruke noe
-- DANIEL
-*/
-function formHandler(event){
-    event.preventDefault()
-    // https://www.learnwithjason.dev/blog/get-form-values-as-json/
-    // preventDefault hindrer at siden refresher når man klikker submit.
-
-    if(!submitted){
-        var p = document.createElement("p")
-        p.id = "submit_feedback"
-        p.style.color = "#db7093"
-        p.innerHTML = "Form submitted!"
-        document.body.appendChild(p)
-
-        console.log("form submitted!")
-
-        const form_data = new FormData(event.target)
-
-        const navn = form_data.get("navn")
-        const l_nr = form_data.get("leilighet")
-        const melding = form_data.get("melding")
-/*    
-        console.log("navn: " + navn)
-        console.log("l_nr: " + l_nr)
-        console.log("melding: " + melding)
-*/
-
-        const final_json_data = {"navn" : navn, "l_nr" : l_nr, "melding" : melding}
-        console.log(JSON.stringify(final_json_data))
-        /*
-        Om vi var tillatt å bruke andre tekonologier for 
-        å lagre data på serveren som f.eks. med php ville vi 
-        postet dataen til en php fil som ville lagret den i en 
-        json fil på serveren som ville sett omtrent slik ut:
-        {
-            "tilbakemeldinger" : [{"navn":"daniel", "l_nr":22, melding:"hei"}, {navn . . .}, . . .]
+var indexValue = 0;
+const img = document.querySelectorAll('img');
+      function slideShow(){
+        setTimeout(slideShow, 2000);
+        var x;
+        const img = document.querySelectorAll("img");
+        for(x = 0; x < img.length; x++){
+          img[x].style.display = "none";
         }
-        Siden vi ikke er tillatt å bruke slike teknologier, 
-        printer javascriptet heller bare til consollen, samtidig 
-        som den gir brukeren feedback på at de har sendt 
-        meldingen. Den hindrer også spam av meldinger 
-        til en viss grad ved å kreve at siden lastes inn på nytt 
-        før man kan sende en ny melding.
-        */
-        submitted = true
-    } 
-    else{
-        document.getElementById("submit_feedback").innerHTML = "Please refresh the page before submitting again."
-    }
-}
-
+        indexValue++;
+        if(indexValue > img.length){indexValue = 1}
+        img[indexValue -1].style.display = "block";
+      }
 
 function sendEpost(event){
     event.preventDefault()
@@ -73,7 +27,7 @@ function sendEpost(event){
         const message = form_data.get("melding")
 
         /* hei, siden klienten vår er fiktiv sender denne e-post til meg
-        venneligst ikke spam for mye under testing, takk. :) 
+        venneligst endre e-posten eller ikke spam for mye under testing, takk. :) 
         mvh daniel fra kl 4 om natta */
         const mail_url = "mailto:danisho@ntnu.no?subject=" 
         + encodeURIComponent(subject) 
@@ -100,4 +54,19 @@ function sendEpost(event){
     }
 }
 var submitted = false
-document.addEventListener("submit", sendEpost)
+
+// legger til navbar
+function addNavbar(){
+    var navbar = document.createDocumentFragment()
+    nav = navbar.appendChild(document.createElement("nav"))
+    nav.innerHTML = "    <label class=\"logo\">Kleists Gate 3</label>    <ul>        <li><a href=\"index.html\">Forside</a></li>        <li><a href=\"info.html\">Info</a></li>        <li><a href=\"Kontakt.html\">Kontakt</a></li>        <li><a href=\"Galleri.html\">Galleri</a></li>        <li><a href=\"booking.html\">Booking</a></li>    </ul>"
+    document.body.insertBefore(navbar, document.body.firstChild)
+}
+
+// her bestemmes funksjonene/metodene som kjøres avhengig av hvilken side som er lastet
+addNavbar()
+if(document.body.id == "index"){
+    slideShow();
+} else if (document.body.id == "kontakt"){
+    document.addEventListener("submit", sendEpost)
+}
