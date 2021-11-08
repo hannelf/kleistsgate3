@@ -66,7 +66,6 @@ function booking(){
         }
     }
     
-    
     makeButtonsforVaskeri();
     
     body.appendChild(vaskeriList)
@@ -75,15 +74,9 @@ function booking(){
     body.appendChild(bakgårdList)
     
     console.log("nice")
-    
-    
-                  
-    
     // lage en array med klokketidet
     // append child button og button text og id
     //lage elementer dånn x
-    
-    
 }
 
 var indexValue = 0;
@@ -114,7 +107,7 @@ function sendEpost(event){
             + "; " + form_data.get("emne")
         const message = form_data.get("melding")
 
-        /* hei, siden klienten vår er fiktiv sender denne e-post til meg
+        /* hei, siden klienten vår er fiktiv sender denne e-post til meg.
         venneligst endre e-posten eller ikke spam for mye under testing, takk. :) 
         mvh daniel fra kl 4 om natta */
         const mail_url = "mailto:danisho@ntnu.no?subject=" 
@@ -158,5 +151,6 @@ if(document.body.id == "index"){
 } else if (document.body.id == "kontakt"){
     document.addEventListener("submit", sendEpost)
 } else if (document.body.id == "booking"){
-    booking()
+    booking() // denne her bør vi kanskje løse opp og rydde i så vi ikke definerer funksjoner i funksjonen booking
+    // gjorde dette bare midlertidig for å få ting på plass
 }
