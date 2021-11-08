@@ -33,7 +33,7 @@ label.logo{
     nav li{
     display: inline-block;
     line-height: 100px;
-    
+    margin-left: 25px;
     }
     
     nav a {
