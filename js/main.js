@@ -96,7 +96,7 @@ function sendEpost(event){
 function addNavbar(){
     var navbar = document.createDocumentFragment()
     nav = navbar.appendChild(document.createElement("nav"))
-    nav.innerHTML = "    <label class=\"logo\">Kleists Gate 3</label>    <ul>        <li><a href=\"index.html\">Forside</a></li>        <li><a href=\"info.html\">Info</a></li>        <li><a href=\"Kontakt.html\">Kontakt</a></li>        <li><a href=\"Galleri.html\">Galleri</a></li>        <li><a href=\"booking.html\">Booking</a></li>    </ul>"
+    nav.innerHTML = "    <label class=\"logo\">Kleists Gate 3</label>    <ul>        <li><a href=\"index.html\">Forside</a></li>        <li><a href=\"info.html\">Info</a></li>        <li><a href=\"kontakt.html\">Kontakt</a></li>        <li><a href=\"galleri.html\">Galleri</a></li>        <li><a href=\"booking.html\">Booking</a></li>    </ul>"
     document.body.insertBefore(navbar, document.body.firstChild)
 }
 
