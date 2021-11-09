@@ -133,3 +133,11 @@ button{
     max-width: 200px;
     max-height: auto;
 }
+
+.kontaktinformasjon{
+    border-style: solid;
+    position: absolute;
+    right: 70px;
+    top: 100px
+   
+}
