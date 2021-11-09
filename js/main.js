@@ -92,6 +92,11 @@ function sendEpost(event){
     }
 }
 
+function imagePopup(){
+    const images = document.querySelectorAll("img")
+    console.log(this)
+}
+
 // legger til navbar
 function addNavbar(){
     var navbar = document.createDocumentFragment()
@@ -129,5 +134,8 @@ if(document.body.id == "index"){
     // append child button og button text og id
     //lage elementer dånn x
 } else if (document.body.id == "galleri"){
-    console.log("galleri")
+    const images = document.querySelectorAll("img")
+    for(let img of images){
+        img.addEventListener("click", imagePopup)
+    }
 }
