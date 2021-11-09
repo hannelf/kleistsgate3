@@ -126,7 +126,11 @@ button{
 }
 
 #vaskeriList{
-    margin-right: 50px;
+    margin-left: 200px;
+}
+
+#bakgårdList{
+    margin: left 10%;
 }
 
 #a123123, #a321321{
@@ -136,8 +140,22 @@ button{
 
 .kontaktinformasjon{
     border-style: solid;
+    background-color: #b9e9e5;
+    border-color: #b9e9e5;
     position: absolute;
     right: 70px;
     top: 100px
-   
+}
+
+#regler{
+    border-style: solid;
+    background-color: #b9e9e5;
+    border-color: #b9e9e5;
+    width: 700px;
+}
+
+#facebooklink{
+    position: absolute;
+    right: 10px;
+    top: 120px;
 }
