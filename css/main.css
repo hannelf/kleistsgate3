@@ -121,9 +121,11 @@ button{
 }
 
 
-ul{
-    position: auto;
+.bookingList{
+    margin: 20px;
     display: inline-block;
-    width: 320px;
-    vertical-align: bottom;
+}
+
+#vaskeriList{
+    margin-right: 50px;
 }
