@@ -1,13 +1,10 @@
 
 const vaskeri =document.getElementById("vaskeri")
 const bakgård =document.getElementById("bakgård")
-//var button = document.querySelector("button")
 const body =document.querySelector("body")
+var linebreak = document.createElement("br")
 
 
-
-
-//buttons.forEach(addEventListener("click", bookTime))
 
 
 
@@ -18,9 +15,11 @@ const bookingTimes=["06:00","07:00", "08:00", "09:00",
 
 const vaskeriList = document.createElement("ul")
 vaskeriList.innerText="Vaskeri"
+vaskeriList.appendChild(linebreak)
 
 const bakgårdList= document.createElement("ul")
 bakgårdList.innerText="Bakgård"
+bakgårdList.appendChild(linebreak)
 
 console.log("nicenice")
 
@@ -30,6 +29,7 @@ function makeButtonsforVaskeri(){
     for (let i=0; i<bookingTimes.length; i++){
         const button= document.createElement("button")
         const input= document.createElement("input")
+        var linebreak = document.createElement("br");
         button.innerText= bookingTimes[i];
         button.onclick =function bookTime(){
             if (button.style.backgroundColor=="red"){
@@ -41,10 +41,10 @@ function makeButtonsforVaskeri(){
             
             console.log("nice");
         }
-        
+        vaskeriList.appendChild(linebreak)
         vaskeriList.appendChild(button)
         vaskeriList.appendChild(input)
-        //button.addEventListener("click", bookTime)
+        
     }
 }
 
@@ -52,6 +52,7 @@ function makeButtonsforBakgård(){
     for (let i=0; i<bookingTimes.length; i++){
         const button= document.createElement("button")
         const input= document.createElement("input")
+        var linebreak = document.createElement("br");
         button.innerText= bookingTimes[i];
         button.onclick =function bookTime(){
             if (button.style.backgroundColor=="red"){
@@ -63,20 +64,17 @@ function makeButtonsforBakgård(){
             
             console.log("nice");
         }
-        
+        bakgårdList.appendChild(linebreak)
         bakgårdList.appendChild(button)
         bakgårdList.appendChild(input)
-        //button.addEventListener("click", bookTime)
+        
     }
 }
 
 
 makeButtonsforVaskeri();
-
-body.appendChild(vaskeriList)
 makeButtonsforBakgård();
 
-body.appendChild(bakgårdList)
 
 console.log("nice")
 
