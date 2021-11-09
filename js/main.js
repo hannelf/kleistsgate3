@@ -79,19 +79,17 @@ function booking(){
     //lage elementer dånn x
 }
 
-var indexValue = 0;
-const img = document.querySelectorAll('img');
-      function slideShow(){
-        setTimeout(slideShow, 2000);
-        var x;
-        const img = document.querySelectorAll("img");
-        for(x = 0; x < img.length; x++){
-          img[x].style.display = "none";
-        }
-        indexValue++;
-        if(indexValue > img.length){indexValue = 1}
-        img[indexValue -1].style.display = "block";
-      }
+function slideShow(){
+    setTimeout(slideShow, 2000);
+    var x;
+    const img = document.querySelectorAll("img");
+    for(x = 0; x < img.length; x++){
+        img[x].style.display = "none";
+    }
+    indexValue++;
+    if(indexValue > img.length){indexValue = 1}
+    img[indexValue -1].style.display = "block";
+}
 
 function sendEpost(event){
     event.preventDefault()
@@ -134,7 +132,6 @@ function sendEpost(event){
         document.getElementById("submit_feedback").innerHTML = "Venneligst last inn siden på nytt før du sender en ny e-post.<br />Ble ikke videresendt? Se heller kontaktinformasjonen under for alternativer."
     }
 }
-var submitted = false
 
 // legger til navbar
 function addNavbar(){
@@ -144,13 +141,19 @@ function addNavbar(){
     document.body.insertBefore(navbar, document.body.firstChild)
 }
 
+
+
 // her bestemmes funksjonene/metodene som kjøres avhengig av hvilken side som er lastet
 addNavbar()
 if(document.body.id == "index"){
+    var indexValue = 0;
     slideShow()
 } else if (document.body.id == "kontakt"){
+    var submitted = false
     document.addEventListener("submit", sendEpost)
 } else if (document.body.id == "booking"){
     booking() // denne her bør vi kanskje løse opp og rydde i så vi ikke definerer funksjoner i funksjonen booking
     // gjorde dette bare midlertidig for å få ting på plass
+} else if (document.body.id == "galleri"){
+
 }
