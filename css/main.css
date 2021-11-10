@@ -147,12 +147,35 @@ button{
     top: 100px
 }
 
-#regler{
+#infooverskrift{
+    padding: 10%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:40px;
+    color: #1d1a1a;
+}
+
+
+#regler-overskrift{
     border-style: solid;
-    padding-left: 40px;
+    padding-left: 10%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:20px;
+    color: #1d1a1a;
     background-color: #fbffff;
     border-color: hsl(0, 0%, 100%);
     width: 600px;
+    margin-left: 5%  
+}
+#regler{
+    border-style: solid;
+    padding-left: 10%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:15px;
+    color: #1d1a1a;
+    background-color: #fbffff;
+    border-color: hsl(0, 0%, 100%);
+    width: 600px;
+    margin-left: 5%;
 }
 
 #facebooklink{
