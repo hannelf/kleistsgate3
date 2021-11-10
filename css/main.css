@@ -116,65 +116,7 @@ color: #1d1a1a;
     width: 100%;
 }
 
-@media only screen and (max-width:940px) {
-    .oppslagstavle{
-        position: absolute;
-        left: 60%;
-        top: 20%;
-        height:80%;
-        width: 34%;
-        background-color: #FFD1D1;
-        border:1px solid #ccc;
-        font: 12px; Georgia, Garamond, Serif;
-        overflow:auto; 
-    }
-    
-    .beskjed.dato{
-    float: left;
-    font-size: 8px;
-    color: #1d1a1a;
-    }
-    
-    .beskjed{
-        width: 80%;
-        padding: 7%;
-        margin: auto;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size:10px;
-        color: #1d1a1a;
-        background-color: rgb(250, 237, 237);
-    }
-    
-    #googlemaps{
-        position: absolute;
-        left: 10%;
-        top: 65%;
-        height:30%;
-        width:35%;   
-    }
-    
-    .slide{
-       
-    
-        position: absolute;
-        left: 10%;
-        top: 20%;
-        height:40%;
-        width:35%; 
-        overflow: hidden;  
-    }
-    
-    .slide .bilder{
-        height: 100%;
-        width: 100%;
-    }
-    
-    .bilder img{
-        height: 100%;
-        width: 100%;
-    }
-    
-}
+
 
 button{
     color: white;
@@ -234,11 +176,12 @@ button{
     left: 10%;
     top: 20%;
     height:100%;
-    width:35%; 
+    width:40%; 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:15px;
     color: #1d1a1a;
     background-color: #fbffff;
+    overflow: auto;
 }
 
 
@@ -247,5 +190,93 @@ button{
     left: 60%;
     top: 20%;
     height:100%;
-    width: 34%;
+    width: 30%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:15px;
+    color: #1d1a1a;
+}
+
+@media only screen and (max-width:940px) {
+    .oppslagstavle{
+        position: absolute;
+        left: 60%;
+        top: 20%;
+        height:80%;
+        width: 34%;
+        background-color: #FFD1D1;
+        border:1px solid #ccc;
+        font: 12px; Georgia, Garamond, Serif;
+        overflow:auto; 
+    }
+    
+    .beskjed.dato{
+    float: left;
+    font-size: 8px;
+    color: #1d1a1a;
+    }
+    
+    .beskjed{
+        width: 80%;
+        padding: 7%;
+        margin: auto;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:10px;
+        color: #1d1a1a;
+        background-color: rgb(250, 237, 237);
+    }
+    
+    #googlemaps{
+        position: absolute;
+        left: 10%;
+        top: 65%;
+        height:30%;
+        width:35%;   
+    }
+    
+    .slide{
+       
+    
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        height:40%;
+        width:35%; 
+        overflow: hidden;  
+    }
+    
+    .slide .bilder{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .bilder img{
+        height: 100%;
+        width: 100%;
+    }
+
+    #regler{
+
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        height:100%;
+        width:40%; 
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:10px;
+        color: #1d1a1a;
+        background-color: #fbffff;
+        overflow: auto;
+    }
+
+    #facebooklink{
+        position: absolute;
+        left: 60%;
+        top: 20%;
+        height:100%;
+        width: 30%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:10px;
+        color: #1d1a1a;
+    }
+    
 }
