@@ -201,11 +201,12 @@ button{
 
 .kontaktinformasjon{
     border-style: solid;
-    background-color: #b9e9e5;
-    border-color: #b9e9e5;
+    background-color: #C1D5D8;
+    border-color: #C1D5D8;
     position: absolute;
     right: 70px;
-    top: 100px
+    top: 100px;
+    padding:5%;
 }
 
 #infooverskrift{
