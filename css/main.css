@@ -60,11 +60,11 @@ nav a{
 }
 
 .oppslagstavle{
-    position: fixed;
-    left: 800px;
-    top: 120px;
-    height:520px;
-    width:450px;
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    height:80%;
+    width: 34%;
     background-color: #FFD1D1;
     border:1px solid #ccc;
     font:16px/26px Georgia, Garamond, Serif;
@@ -79,7 +79,7 @@ color: #1d1a1a;
 
 .beskjed{
     width: 80%;
-    padding: 35px;
+    padding: 7%;
     margin: auto;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:20px;
@@ -89,19 +89,20 @@ color: #1d1a1a;
 
 #googlemaps{
     position: absolute;
-    left: 110px;
-    top: 380px;
-    padding-bottom: 20px;
-    height:250px;
-    width:540px;   
+    left: 10%;
+    top: 65%;
+    height:30%;
+    width:35%;   
 }
 
 .slide{
+   
+
     position: absolute;
-    left: 110px;
-    top: 120px;
-    height: 240px;
-    width: 540px;
+    left: 10%;
+    top: 20%;
+    height:40%;
+    width:35%; 
     overflow: hidden;  
 }
 
@@ -113,6 +114,66 @@ color: #1d1a1a;
 .bilder img{
     height: 100%;
     width: 100%;
+}
+
+@media only screen and (max-width:940px) {
+    .oppslagstavle{
+        position: absolute;
+        left: 60%;
+        top: 20%;
+        height:80%;
+        width: 34%;
+        background-color: #FFD1D1;
+        border:1px solid #ccc;
+        font: 12px; Georgia, Garamond, Serif;
+        overflow:auto; 
+    }
+    
+    .beskjed.dato{
+    float: left;
+    font-size: 8px;
+    color: #1d1a1a;
+    }
+    
+    .beskjed{
+        width: 80%;
+        padding: 7%;
+        margin: auto;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:10px;
+        color: #1d1a1a;
+        background-color: rgb(250, 237, 237);
+    }
+    
+    #googlemaps{
+        position: absolute;
+        left: 10%;
+        top: 65%;
+        height:30%;
+        width:35%;   
+    }
+    
+    .slide{
+       
+    
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        height:40%;
+        width:35%; 
+        overflow: hidden;  
+    }
+    
+    .slide .bilder{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .bilder img{
+        height: 100%;
+        width: 100%;
+    }
+    
 }
 
 button{
