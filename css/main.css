@@ -204,44 +204,48 @@ button{
     background-color: #C1D5D8;
     border-color: #C1D5D8;
     position: absolute;
-    right: 70px;
-    top: 100px;
-    padding:5%;
+    left: 70%;
+    top: 20%;
 }
 
-#infooverskrift{
-    padding: 10%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:40px;
-    color: #1d1a1a;
+#kontaktform{
+    position: absolute;
+    left: 5%;
+    top: 28%;
+
+}
+
+#kontakterror{
+    position: absolute;
+    left: 5%;
+    top: 95%;
+}
+
+#forslag{
+    position: absolute;
+    left: 5%;
+    top: 21%;
 }
 
 
-#regler-overskrift{
-    border-style: solid;
-    padding-left: 10%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:20px;
-    color: #1d1a1a;
-    background-color: #fbffff;
-    border-color: hsl(0, 0%, 100%);
-    width: 600px;
-    margin-left: 5%  
-}
+
 #regler{
-    border-style: solid;
-    padding-left: 10%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    height:100%;
+    width:35%; 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:15px;
     color: #1d1a1a;
     background-color: #fbffff;
-    border-color: hsl(0, 0%, 100%);
-    width: 600px;
-    margin-left: 5%;
 }
+
 
 #facebooklink{
     position: absolute;
-    right: 10px;
-    top: 120px;
+    left: 60%;
+    top: 20%;
+    height:100%;
+    width: 34%;
 }
