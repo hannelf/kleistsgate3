@@ -88,7 +88,7 @@ function sendEpost(event){
         submitted = true
     }    
     else{
-        document.getElementById("submit_feedback").innerHTML = "Venneligst last inn siden på nytt før du sender en ny e-post.<br />Ble ikke videresendt? Se heller kontaktinformasjonen under for alternativer."
+        document.getElementById("submit_feedback").innerHTML = "Venneligst last inn siden på nytt før du sender en ny e-post.<br />Ble ikke videresendt? Se kontaktinformasjonen til høyre for alternativer."
     }
 }
 
