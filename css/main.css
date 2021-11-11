@@ -280,6 +280,10 @@ Responsiv design for alternative skjerm format.
 */
 
 @media only screen and (max-width:940px) {
+    nav{
+        overflow: scroll;
+    }
+
     .oppslagstavle{
         position: absolute;
         left: 60%;
