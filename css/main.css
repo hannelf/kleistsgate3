@@ -27,6 +27,7 @@ body{
     background-color: var(--farge3);
 }
 
+
 /*footer*/
 
 #footer{
@@ -176,7 +177,6 @@ at det faktiske bildet i bigimg er i rett størrelsesforhold.
     display: inline-block;
     width: 200px;
     height: 150px;
-    margin: 55px;
     border-width: 20px;
     border-style: solid;
     border-color: #FFEEEE;
@@ -190,12 +190,23 @@ at det faktiske bildet i bigimg er i rett størrelsesforhold.
     transition: filter 0.5s, border-color 0.5s;
 }
 
+/*
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+Deler bildene inn i kolonner, og bruker flexbox for å lage et sentrert, responsivt design.
+*/
 #bildegalleri{
-    width: auto;
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 10%;
     /*border: 3px solid black;
     debug*/
+}
+
+.kolonne{
+    flex: 25%;
+    max-width: 25%;
+    text-align: center;
 }
 
 #bildeviser{
@@ -364,9 +375,22 @@ Responsiv design for alternative skjerm format.
     #facebooklink{
         margin-bottom: 50px;
     }
+
+
+    .kolonne{
+        flex: 50%;
+        max-width: 50%;
+        flex-direction: row;
+    }
 }
 
 @media only screen and (max-width:940px) {
+    .kolonne{
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 25%;
+    }
+
     label.logo{
         font-size: 2em;
     }
