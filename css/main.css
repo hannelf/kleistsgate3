@@ -263,7 +263,7 @@ Responsiv design for alternative skjerm format.
         width: 34%;
         background-color: #FFD1D1;
         border:1px solid #ccc;
-        font: 12px; Georgia, Garamond, Serif;
+        font: 12px, Georgia, Garamond, Serif;
         overflow:auto; 
     }
     
