@@ -224,7 +224,7 @@ Deler bildene inn i kolonner, og bruker flexbox for å lage et sentrert, respons
     z-index: 99;
     /*border: 3px solid black;
     debug*/
-    background-color: #56b3ab;
+    background-color: var(--farge2-lys)
     overflow: hidden;
 }
 
