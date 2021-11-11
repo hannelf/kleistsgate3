@@ -139,7 +139,6 @@ Forsiden / index
 /*
 Bookingsiden
 */
-
 .booking{
     position: relative;
     margin-left: auto;
@@ -173,6 +172,7 @@ Bookingsiden
 }
 
 button{
+    margin-right: 5px;
     color: white;
     background-color: green;
 }
@@ -430,7 +430,6 @@ Responsiv design for alternative skjerm format.
 
 
 @media only screen and (max-width:940px) {
-
     .bookingList{
         display: table;
         margin: 0 auto;
