@@ -38,6 +38,8 @@ function makeButtonsforBakgård(bookingTimes){
     }
 }
 
+// Slideshow, brukt denne kilden for å tilegne kunnskap: https://www.w3schools.com/w3css/w3css_slideshow.asp //
+
 function slideShow(){
     setTimeout(slideShow, 2000);
     var x;
