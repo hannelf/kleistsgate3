@@ -46,12 +46,15 @@ Universiell navigasjonsbar (via JS)
 */
 
 nav{
+    position: relative;
     height: 80px;
     width: 100%;
     background: var(--farge1);
 }
 
 label.logo{
+    position: absolute;
+    display: block;
     font-size: 50px;
     font-weight: bold;
     color: white;
@@ -188,11 +191,9 @@ at det faktiske bildet i bigimg er i rett størrelsesforhold.
 }
 
 #bildegalleri{
-    width: 93%;
-    margin: auto;
-    display: flex;
-    justify-items: center;
-
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     /*border: 3px solid black;
     debug*/
 }
@@ -280,11 +281,10 @@ infoside
 */
 
 #infowrapper{
-    max-width: 75%;
-    max-height: fit-content;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #infowrapper ol{
@@ -292,7 +292,9 @@ infoside
 }
 
 #infowrapper li{
+    display: list-item;
     background-color: rgba(255,255,255,0);
+    margin-top: 10px;
     transition: background-color 0.25s;
 }
 
@@ -302,11 +304,11 @@ infoside
 }
 
 #regler{
-    position: relative;
-    display: block;
     float: left;
-    width:67ch;
+    width: 30%;
+    margin-top: auto;
     margin-right: 5%;
+    margin-bottom: 40px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:20px;
     color: var(--tekst-farge);
@@ -318,6 +320,8 @@ infoside
 #facebooklink{
     position: relative;
     display: block;
+    margin-top: 0;
+    height: fit-content;
     float: left;
     width: 600px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -342,9 +346,29 @@ infoside
 Responsiv design for alternative skjerm format.
 */
 
+@media only screen and (max-width:1200px) {
+    label.logo{
+        padding: 0;
+    }
+
+    #infowrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #regler{
+        width: 75%;
+        margin-right: 0;
+    }
+
+    #facebooklink{
+        margin-bottom: 50px;
+    }
+}
+
 @media only screen and (max-width:940px) {
-    nav{
-        overflow: scroll;
+    label.logo{
+        font-size: 2em;
     }
 
     .oppslagstavle{
@@ -402,30 +426,6 @@ Responsiv design for alternative skjerm format.
         width: 100%;
     }
 
-    #regler{
-        position: absolute;
-        left: 10%;
-        top: 20%;
-        height:100%;
-        width:40%; 
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size:10px;
-        color: #1d1a1a;
-        background-color: #fbffff;
-        overflow: auto;
-    }
-
-    #facebooklink{
-        position: absolute;
-        left: 60%;
-        top: 20%;
-        height:100%;
-        width: 30%;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size:10px;
-        color: #1d1a1a;
-    }
-    
     .kontaktinformasjon{
         border-style: solid;
         background-color: #C1D5D8;
