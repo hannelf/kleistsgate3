@@ -1,6 +1,15 @@
 /*
 ting som gjelder alle sidene
 */
+:root{
+    --farge1: #4C8A93;
+    --farge2: #77B4BC;
+    --tekst-farge: rgb(8, 63, 8);
+    --tekst-farge-alt: rgb(51, 53, 77);
+    --farge2-lys: #a6d1d6;
+    --farge3: #FFEEEE;
+    --farge4: #FFD1D1;
+}
 
 *{
     padding: 0;
@@ -15,7 +24,7 @@ html{
 
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #FFEEEE;
+    background-color: var(--farge3);
 }
 
 
@@ -26,13 +35,13 @@ Universiell navigasjonsbar (via JS)
 nav{
     height: 80px;
     width: 100%;
-    background: #4C8A93;
+    background: var(--farge1);
 }
 
 label.logo{
     font-size: 50px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 0 100px;
     line-height: 100px;
 }
@@ -49,8 +58,8 @@ nav li{
 }
 
 nav a{
-    color: rgb(255, 255, 255);
-    background-color:  #77B4BC;
+    color: white;
+    background-color:  var(--farge2);
     font-size: 25px;
     text-transform: uppercase;
     border: 3px solid transparent;
@@ -284,13 +293,13 @@ infoside
     position: relative;
     display: block;
     float: left;
-    width:50%;
+    width:67ch;
     margin-right: 5%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:20px;
-    color: #273524;
-    background-color: #FFD1D1;
-    border: 10px solid #ffd1d1;
+    color: var(--tekst-farge);
+    background-color: var(--farge2-lys);
+    border: 10px solid var(--farge2-lys);
 }
 
 
@@ -301,9 +310,9 @@ infoside
     width: 600px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:20px;
-    color: #273524;
-    background-color: #FFD1D1;
-    border: 10px solid #ffd1d1;
+    color: var(--tekst-farge);
+    background-color: var(--farge2-lys);
+    border: 10px solid var(--farge2-lys);
 }
 
 #facebooklink img{
