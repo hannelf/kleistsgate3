@@ -328,11 +328,6 @@ infoside
     margin-top: 50px;
 }
 
-ul p{
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
 #infowrapper li{
     display: list-item;
     background-color: rgba(255,255,255,0);
@@ -358,6 +353,12 @@ ul p{
     color: var(--tekst-farge);
     background-color: var(--farge2-lys);
     border: 10px solid var(--farge2-lys);
+}
+
+#regler #regler_overtekst{
+    font-size: 1.5em;
+    margin: 10px 0;
+    border: none;
 }
 
 
@@ -470,8 +471,8 @@ Responsiv design for alternative skjerm format.
         top: 20%;
         height:80%;
         width: 34%;
-        background-color: #FFD1D1;
-        border:1px solid #ccc;
+        background-color: var(--farge2-lys);
+        border:1px solid var(--farge2);
         font: 12px, Georgia, Garamond, Serif;
         overflow:auto; 
     }
