@@ -92,22 +92,38 @@ function sendEpost(event){
     }
 }
 
-function imagePopup(){
-    const images = document.querySelectorAll("img")
-    console.log(this)
+/*
+Her utnyttes transition delen i main.css for #bigimg for
+å oppnå en smooth overgang mellom bildene. Her kjører den anonyme 
+funksjonen etter 400ms, som er hvor lang overgangen tar fra opacity = 1 til
+opacity = 0, så bytter den bilde og gjør overgang fra opacity = 0 tilbake til
+opacity = 1.
+*/
+function imageViewer(){
+    bigimg = document.getElementById("bigimg")
+    bigimg.style.opacity = 0
+    setTimeout(function(newsrc){
+        bigimg.src = newsrc
+        bigimg.style.opacity = 1
+    }, 400, this.src)
 }
 
-// legger til navbar
+/*
+Legger til navbar (jeg bare copy-pasta HTMLen til navbaren inn i nav.innerHTML,
+kanskje ikke den beste løsningen, men den funker veldig fint. :) )
+*/
 function addNavbar(){
     var navbar = document.createDocumentFragment()
     nav = navbar.appendChild(document.createElement("nav"))
+    nav.id = "navID"
     nav.innerHTML = "    <label class=\"logo\">Kleists Gate 3</label>    <ul>        <li><a href=\"index.html\">Forside</a></li>        <li><a href=\"info.html\">Info</a></li>        <li><a href=\"kontakt.html\">Kontakt</a></li>        <li><a href=\"galleri.html\">Galleri</a></li>        <li><a href=\"booking.html\">Booking</a></li>    </ul>"
     document.body.insertBefore(navbar, document.body.firstChild)
 }
 
-
-
-// her bestemmes funksjonene/metodene som kjøres avhengig av hvilken side som er lastet
+/*
+Hver side sin body element har en unik ID som lar oss bestemme her hvilken kode som skal
+kjøre for hvilke sider.
+*/
 addNavbar()
 if(document.body.id == "index"){
     var indexValue = 0;
@@ -136,6 +152,19 @@ if(document.body.id == "index"){
 } else if (document.body.id == "galleri"){
     const images = document.querySelectorAll("img")
     for(let img of images){
-        img.addEventListener("click", imagePopup)
+        img.addEventListener("click", imageViewer)
     }
+
+    /* 
+    Lager bildeviseren, appender et img barn med spesifikk id og src, dermed legger den til i body før
+    bildegalleriet.
+    */
+    let bildeviser = document.createElement("div")
+    bildeviser.id = "bildeviser"
+    let bildeviser_img = bildeviser.appendChild(document.createElement("img"))
+    bildeviser_img.id = "bigimg"
+    bildeviser_img.loading = "lazy"
+    bildeviser_img.src = "img/photos/IMG_5058.JPG"
+    document.body.insertBefore(bildeviser, document.getElementById("bildegalleri"))
+
 }
