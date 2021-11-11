@@ -90,7 +90,7 @@ function sendEpost(event){
         submitted = true
     }    
     else{
-        document.getElementById("submit_feedback").innerHTML = "Venneligst last inn siden på nytt før du sender en ny e-post.<br />Ble ikke videresendt? Se kontaktinformasjonen til høyre for alternativer."
+        document.getElementById("submit_feedback").innerHTML = "Venneligst last inn siden på nytt før du sender en ny e-post.<br />Ble ikke videresendt? Se kontaktinformasjon for kontaktalternativer."
     }
 }
 
@@ -111,11 +111,12 @@ function imageViewer(){
 }
 
 /*
-Legger til navbar (jeg bare copy-pasta HTMLen til navbaren inn i nav.innerHTML,
+Legger til navbar og footer (jeg bare copy-pasta HTMLen til navbaren inn i nav.innerHTML,
 kanskje ikke den beste løsningen, men den funker veldig fint. :) )
+footer var et mye enklere objekt så jeg tok en annen løsning
 */
 function addNavbar(){
-    var navbar = document.createDocumentFragment()
+    let navbar = document.createDocumentFragment()
     nav = navbar.appendChild(document.createElement("nav"))
     nav.id = "navID"
     nav.innerHTML = "    <label class=\"logo\">Kleists Gate 3</label>    <ul>        <li><a href=\"index.html\">Forside</a></li>        <li><a href=\"info.html\">Info</a></li>        <li><a href=\"kontakt.html\">Kontakt</a></li>        <li><a href=\"galleri.html\">Galleri</a></li>        <li><a href=\"booking.html\">Booking</a></li>    </ul>"

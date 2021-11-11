@@ -7,27 +7,29 @@
         <link rel="icon" type="image/png" href="img/favicon.png" />
     </head>
     <body id="kontakt">
-      <div id="tilbakemelding_full">
-        <h3 id="forslag">Har du forslag til oss? Ta kontakt via e-post.</h3>
-        <form id="kontaktform">
-            <label for="navn">Navn: </label>
-            <input id="navn" name="navn" type="text" max="50" placeholder="Skriv inn navn. . ." required="required" />
-    
-            <label for="leilighet">Leilighetsnr.: </label>
-            <input id="leilighet" name="leilighet" type="number" min="1" max="23" placeholder="Skriv inn leilighetsnr. . ." required="required" />
-            <br />
+      <div class="kontakt">
+        <div id="tilbakemelding_full">
+          <h3 id="forslag">Har du forslag til oss? Ta kontakt via e-post.</h3>
+          <form id="kontaktform">
+              <!--<label for="navn">Navn: </label>-->
+              <input id="navn" name="navn" type="text" max="50" placeholder="Skriv inn navn. . ." required="required" />
+          
+              <!--<label for="leilighet">Leilighetsnr.: </label>-->
+              <input id="leilighet" name="leilighet" type="number" min="1" max="23" placeholder="Skriv inn leilighetsnr. . ." required="required" />
+              <br />
 
-            <label for="emne">Emne: </label>
-            <input id="emne" name="emne" type="text" max="100" placeholder="Emne på e-post. . ." required="required" />
-            <br />
+              <!--<label for="emne">Emne: </label>-->
+              <input id="emne" name="emne" type="text" max="100" placeholder="Emne på e-post. . ." required="required" />
+              <br />
 
-            <label for="melding">Tilbakemelding: </label><br />
-            <textarea id="melding" name="melding" rows="20" cols="80" placeholder="Skriv din melding her. . ." required="required"></textarea>
-            <br />
-            
-            <input id="submit" type="submit" value="Send e-post" target="_blank" />
-        </form>
-      </div>
+              <!--<label for="melding">Tilbakemelding: </label><br />-->
+              <textarea id="melding" name="melding" rows="20" cols="80" placeholder="Skriv din melding her. . ." required="required"></textarea>
+              <br />
+
+              <input id="submit" type="submit" value="Send e-post" target="_blank" />
+          </form>
+        </div>
+      
         <!--
         <p id="kontakterror">Fungerer ikke kontaktformen over?<br />
             Kontakt oss direkte her:<br />
@@ -36,33 +38,34 @@
         </p>
         -->
 
-      <div class= "kontaktinformasjon">
-        <p><b>Kontaktinformasjon</b></p>
-        <div class= "folk" >
-          <p><b>Håkon Hansen</b></p>
-          <ul>
-            <li>Styreleder</li>
-            <li>tlf. 40404040</li>
-            <li>hakon.hansen@gmail.com</li>
-           </ul>
-          <p><b>Wenche Wiken</b></p>
-          <ul>
-            <li>Varaleder</li>
-            <li>tlf. 93939393</li>
-            <li>Wenche.viken@gmail.com</li>
-           </ul>
-          <p><b>Tom Tomassen</b></p>
-          <ul>
-            <li>Vaktmester</li>
-            <li>tlf. 90909090</li>
-            <li>tom.tomassen@gmail.com</li>
-           </ul>
-           <p><b>Kari Knudsen</b></p>
-          <ul>
-            <li>Tillitsvalgt</li>
-            <li>tlf. 42424242</li>
-            <li>kari.nordmann@gmail.com</li>
-           </ul>
+        <div class= "kontaktinformasjon">
+          <p><b>Kontaktinformasjon</b></p>
+          <div class= "folk" >
+            <p><b>Håkon Hansen</b></p>
+            <ul>
+              <li>Styreleder</li>
+              <li>tlf. 40404040</li>
+              <li>hakon.hansen@gmail.com</li>
+             </ul>
+            <p><b>Wenche Wiken</b></p>
+            <ul>
+              <li>Varaleder</li>
+              <li>tlf. 93939393</li>
+              <li>Wenche.viken@gmail.com</li>
+             </ul>
+            <p><b>Tom Tomassen</b></p>
+            <ul>
+              <li>Vaktmester</li>
+              <li>tlf. 90909090</li>
+              <li>tom.tomassen@gmail.com</li>
+             </ul>
+             <p><b>Kari Knudsen</b></p>
+            <ul>
+              <li>Tillitsvalgt</li>
+              <li>tlf. 42424242</li>
+              <li>kari.nordmann@gmail.com</li>
+             </ul>
+          </div>
         </div>
       </div>
       <script src="js/main.js"></script>

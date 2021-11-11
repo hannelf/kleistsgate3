@@ -25,20 +25,7 @@ html{
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--farge3);
-}
-
-
-/*footer*/
-
-#footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #4C8A93;
-    opacity: 0.5;
-}
-#tekst{
-    color:rgb(255, 255, 255);
+    height: 100%;
 }
 
 
@@ -236,6 +223,15 @@ Deler bildene inn i kolonner, og bruker flexbox for å lage et sentrert, respons
 /*
 Kontaktinfosiden
 */
+.kontakt{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 input{
     padding:4px;
 }
@@ -255,42 +251,43 @@ textarea{
 }
 
 .kontaktinformasjon{
+    display:inline-block;
     border-style: solid;
+    color: var(--tekst-farge);
     background-color: var(--farge2-lys);
     border-color: var(--farge2-lys);
-    position: absolute;
-    left: 60%;
-    top: 15%;
     width: 20%;
     padding-left: 5%;
 }
 
 #tilbakemelding_full{
-    position: absolute;
+    display:inline-block;
     padding-top: 2%;
     padding-bottom: 2.5%;
     padding-left: 5%;
     padding-right: 5%;
-    left: 5%;
-    top: 15%;
     background-color: var(--farge2-lys)
 }
 
+#tilbakemelding_full h3{
+    color: var(--tekst-farge);
+    margin-bottom: 10px;
+}
+
 #navn{
-    width: 43.8%;
-    margin-right: 3%;
+    width: 70%;
 }
 
 #leilighet{
     width: 25%;
 }
 
-#navn, #leilighet, #emne, textarea{
-    margin-bottom: 10px;
+#emne{
+    width: 98%;
 }
 
-#emne{
-    width:74.5ch;
+#navn, #leilighet, #emne, textarea{
+    margin-bottom: 10px;
 }
 
 #kontakterror{
@@ -406,13 +403,44 @@ Responsiv design for alternative skjerm format.
 
 
 @media only screen and (max-width:940px) {
+    .kontakt{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tilbakemelding_full{
+        width: 50%;
+    }
+
+    .kontaktinformasjon{
+        width: 54.3%;
+        display:block;
+        margin: 0 auto;
+    }
+
+    #navn{
+        width: 95%;
+    }
+    
+    #leilighet{
+        width: 95%;
+    }
+    
+    #emne{
+        width: 95%;
+    }
+    
+    textarea{
+        width: 95%;
+    }
+
     .kolonne{
         flex: 100%;
         max-width: 100%;
         padding: 0 25%;
     }
 
-       label.logo{
+    label.logo{
         font-size: 12px;
     }
 
@@ -471,46 +499,17 @@ Responsiv design for alternative skjerm format.
         width: 100%;
     }
 
-    .kontaktinformasjon{
-        border-style: solid;
-        background-color: #C1D5D8;
-        border-color: #C1D5D8;
-        position: absolute;
-        left: 70%;
-        top: 20%;
-        font-size: 10px;
-        width: 20%;
-        padding-left: 5%;
-        overflow: auto;
-        
-    }
-    
-    #kontaktform{
-        position: absolute;
-        left: 5%;
-        top: 28%;
-        font-size: 10px;
-    }
-    
-    #kontakterror{
-        position: absolute;
-        left: 5%;
-        top: 95%;
-        font-size: 10px;
-    }
-    
-    #forslag{
-        position: absolute;
-        left: 5%;
-        top: 21%;
-        font-size: 10px;
-    }
-    
-        nav a{
-        font-size: 10px;
+    .kontakt{
+        flex-direction: column;
     }
 
     footer {
         visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:670px){
+    nav a{
+        font-size: 12px;
     }
 }
