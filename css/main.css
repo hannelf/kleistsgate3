@@ -139,6 +139,14 @@ Forsiden / index
 /*
 Bookingsiden
 */
+
+ #bookingforklaring{
+     text-align: center;
+     color:#FFEEEE;
+     font-size: 14px;
+     background-color: var(--farge2);   
+}
+
 #bookingforklaring{
     position: absolute;
     left: 5%;
