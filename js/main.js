@@ -76,9 +76,9 @@ function sendEpost(event){
         a.href = mail_url
         a.setAttribute("target", "_blank")
         a.click()
-        // https://stackoverflow.com/a/39987213
-        // var litt irriterende at mailto åpnet i samme tab, så her åpner den en ny en.
-        // trengte denne løsningen for browser støtte
+        /* https://stackoverflow.com/a/39987213
+         Var litt irriterende at mailto åpnet i samme tab, så her åpner den en ny en.
+         Trengte denne løsningen for browser støtte */
 
         /* gammel løsning, åpner i samme tab
         window.location.href = "mailto:danisho@ntnu.no?subject=" 

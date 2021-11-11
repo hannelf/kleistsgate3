@@ -65,6 +65,7 @@ label.logo{
 
 nav ul{
     float: right;
+    padding-right: 100px;
     margin-right: 40px;
 }
 
@@ -195,6 +196,7 @@ https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
 Deler bildene inn i kolonner, og bruker flexbox for å lage et sentrert, responsivt design.
 */
 #bildegalleri{
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 10%;
@@ -234,6 +236,14 @@ Deler bildene inn i kolonner, og bruker flexbox for å lage et sentrert, respons
 /*
 Kontaktinfosiden
 */
+input{
+    padding:4px;
+}
+
+textarea{
+    resize: none;
+    padding:4px;
+}
 
 .folk ul{
     list-style: none; 
@@ -246,8 +256,8 @@ Kontaktinfosiden
 
 .kontaktinformasjon{
     border-style: solid;
-    background-color: #C1D5D8;
-    border-color: #C1D5D8;
+    background-color: var(--farge2-lys);
+    border-color: var(--farge2-lys);
     position: absolute;
     left: 60%;
     top: 15%;
@@ -255,15 +265,24 @@ Kontaktinfosiden
     padding-left: 5%;
 }
 
-#kontaktform{
+#tilbakemelding_full{
     position: absolute;
-    left: 10%;
-    top: 20%;
+    padding-top: 2%;
+    padding-bottom: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    left: 5%;
+    top: 15%;
+    background-color: var(--farge2-lys)
 }
 
 #navn{
-    width: 50ch;
-    margin-right: 20px;
+    width: 43.8%;
+    margin-right: 3%;
+}
+
+#leilighet{
+    width: 25%;
 }
 
 #navn, #leilighet, #emne, textarea{
@@ -280,12 +299,6 @@ Kontaktinfosiden
     top: 95%;
 }
 
-#forslag{
-    position: absolute;
-    left: 10%;
-    top: 15%;
-}
-
 
 /*
 infoside
@@ -298,14 +311,17 @@ infoside
     margin-top: 50px;
 }
 
-#infowrapper ol{
-    list-style-type: decimal;
+ul p{
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
 #infowrapper li{
     display: list-item;
     background-color: rgba(255,255,255,0);
     margin-top: 10px;
+    padding-top: 5px;
+    border-top: 3px solid var(--farge2);
     transition: background-color 0.25s;
 }
 
@@ -358,6 +374,10 @@ Responsiv design for alternative skjerm format.
 */
 
 @media only screen and (max-width:1200px) {
+    nav ul{
+        padding-right: 0;
+    }
+
     label.logo{
         padding: 0;
     }
@@ -389,6 +409,10 @@ Responsiv design for alternative skjerm format.
         flex: 100%;
         max-width: 100%;
         padding: 0 25%;
+    }
+
+    nav ul{
+        padding-right: 0;
     }
 
     label.logo{
