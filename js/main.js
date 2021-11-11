@@ -16,6 +16,11 @@ function makeButtonsforVaskeri(bookingTimes){
         vaskeriList.appendChild(input)
         
     }
+    const submit= document.createElement("button")
+    submit.type="submit"
+    submit.innerText="Book tid"
+    vaskeriList.appendChild(document.createElement("br"))
+    vaskeriList.appendChild(submit)
 }
 
 function makeButtonsforBakgård(bookingTimes){
@@ -23,6 +28,8 @@ function makeButtonsforBakgård(bookingTimes){
         const button= document.createElement("button")
         const input= document.createElement("input")
         button.innerText = bookingTimes[i];
+        
+    
         button.onclick = function bookTime(){
             if (button.style.backgroundColor=="red"){
                 button.style.backgroundColor="green"
@@ -35,7 +42,14 @@ function makeButtonsforBakgård(bookingTimes){
         bakgårdList.appendChild(button)
         bakgårdList.appendChild(input)
         
+        
     }
+    const submit= document.createElement("button")
+    submit.type="submit"
+    submit.innerText="Book tid"
+    bakgårdList.appendChild(document.createElement("br"))
+    bakgårdList.appendChild(submit)
+    
 }
 
 // Slideshow, brukt denne kilden for å tilegne kunnskap: https://www.w3schools.com/w3css/w3css_slideshow.asp //
