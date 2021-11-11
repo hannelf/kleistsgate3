@@ -64,9 +64,9 @@ function sendEpost(event){
             + "; " + form_data.get("emne")
         const message = form_data.get("melding")
 
-        /* hei, siden klienten vår er fiktiv sender denne e-post til meg.
-        venneligst endre e-posten eller ikke spam for mye under testing, takk. :) 
-        mvh daniel fra kl 4 om natta */
+        /* Hei, siden klienten vår er fiktiv sender denne e-post til meg.
+        Venneligst endre e-posten eller ikke spam for mye under testing, takk. :) 
+        Mvh. Daniel fra kl 4 om natta. */
         const mail_url = "mailto:danisho@ntnu.no?subject=" 
         + encodeURIComponent(subject) 
         + "&body=" + encodeURIComponent(message)
