@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P3 Changes</title>
+    <style>
+        body {
+            font-family: sans-serif, serif;
+            color: #56b3ab;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            margin: auto;
+            margin-bottom: 5em;
+            max-width: 110ch;
+            background-color: rgb(228, 255, 247);
+        }
+
+        p,h1,h2,h3,h4,li{
+            font-family: sans-serif, serif;
+            color: palevioletred;
+            padding-top: 2px;
+        }
+
+        h1{
+            font-size: 2.5em;
+        }
+
+        h5{
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+
+        p{
+            margin-top: 1px;
+        }
+
+        h3{
+            margin-bottom: 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>P3: Endringer</h1>
+    
+    <h5 id="authors">Hanne Fyrand, Sebastian Warholm, Lene Johnsen, Daniel Hoftvedt, Kine Halstenrud </h5>
+    <h5 id="date">10. november 2021</h5>
+    <h5 id="client">Kunde: Kleists gate 3 borettslag</h5>
+    
+    <a href="https://org.ntnu.no/webtek48/index.html">Link til nettsiden</a>
+
+    <h2>Endringer fra P2 til det ferdige produktet</h1>
+    <p>Vi har gjennom arbeidet med kodingen av nettsiden måttet gjøre subtile endringer fra hva vi leverte i 
+        P2. Dette fordi ting viste seg at ikke var mulig, eller fordi vi ville øke funksjonaliteten ved siden. 
+        Vi vil kort gjennomgå de ulike signifikante endringene som er gjort. </p>
+
+    <h3>Erstattelse av diskusjonstavlen</h3>
+    <h5>info.html</h5>
+    <p>Diskusjontavlen ble umulig å utvikle uten bruk av databaser som lagrer informasjonen som brukerne poster der. 
+        Derfor har vi som en plan B erstattet tavlen med en Facebookside, linket gjennom bildet, for å kunne 
+        bevare målet om å tilby en toveis kommunikasjonskanal.</p>
+    <p>I info.html har vi også endret litt på utformingen av regellisten, for å gjøre den mer 
+        lettleselig og penere å se på.
+    </p>
+
+    <h3>Bookingsystemet</h3>
+    <h5>booking.html</h5>
+    <p>Også bookingsystemet er påvirket av unngåelsen av bruk av databaser. Dataene som skrives
+        inn vil ikke lagres. Samtidig så måtte vi gjøre endringer i utseendet for å få til funksjonaliteten
+        om å skrive inn navn. Vi har også lagt til en beskrivelse for hvordan man benytter seg av 
+        bookingfunksjonen, for å øke brukervennligheten og forhindre forvirring.</p>
+
+    
+    <h3>Galleriet</h3>
+    <h5>galleri.html</h5>
+    <p>Med galleriet endte vi opp med en bildefunksjon som er ganske annerledes i forhold til den planlagte funksjonen. Den planlagte funksjonen i følge P2 var at 
+        brukeren skulle kunne klikke på et miniatyrbilde, så ville det bildet vises på stor skjerm på et lag over alle de andre elementene i dokumentet. Selv om dette var 
+        ikke et helt uoppnåelig mål, løpte vi raskt inn i en rekke problemer med hvordan JS DOM oppførte seg med CSS. 
+        Til slutt fant vi ut at den nåværende løsningen ikke bare var enklere å implementere, men også mer penere estetisk sett. Vi valgte derfor å forkaste den 
+        gamle idéen fra P2 i bytte mot den nye. Derfor har vi nå en funksjon som viser bilder i stor oppløsning øverst på 
+        siden, hvor brukerne kan klikke på bildene under som de ønsker å forstørre.</p>
+    
+    <h3>Farger</h3>
+    <p>Vi har tatt i bruk flere farger enn hva vi opprinnelig planla i P2. Vi har beholdt bakgrunnsfargen <b>#FFEEEE</b>, samt
+    fargen på hovedmenyen <b>#4C8A93</b> og <b>#77B4BC</b>. I tillegg har vi lagt til flere farger, blant annet <b>#a6d1d6</b> for knappefarger og bakgrunner på
+    enkelte bokser. Vi har også endret tekstfargen blant annet på info.html til <b>rgb(8, 63, 77)</b>. Vi har valgt å legge til 
+    flere farger for å skape en større dynamikk på nettsiden vår, og for å gjøre enkelte elementer ved siden mer lettleselig.</p> 
+    
+
+    <h2>Oppdatering av filstrukturen</h2>
+    <p>Slik ser den endelige filstrukturen ut:</p>
+    <ul>
+        <li>kleistsgate3</li>
+        <ul>
+        <li>index.html</li>
+        <li>info.html</li>
+        <li>galleri.html</li>
+        <li>booking.html</li>
+        <li>kontakt.html</li>
+        <li>css</li>
+            <ul>
+            <li>main.css</li>
+            </ul>
+        <li>js</li>
+            <ul>
+            <li>main.js</li>
+            </ul>
+        <li>img</li>
+        <ul>
+            <li>favicon.png</li>
+            <li>fb.png</li>
+            <li>photos</li>
+                <ul>
+                <li>IMG_5058.JPG</li>
+                <li>IMG_5059.JPG</li>
+                <li>...</li>
+                </ul>
+        </ul>
+      </ul>
+      </ul>
+    
+    <h2>Gruppens fullførelse av minimumskrav</h1>
+    <p>Gruppen har i tett samarbeid med hverandre kodet ulike JavaScript-funksjoner for å gjøre nettsiden
+        mer funksjonell. Ettersom vi er fem medlemmer i gruppa, og det er fem html-sider på nettsiden, så vi det som
+        mest hensiktsmessig å fordele hvert medlem hovedansvar for hver sin side. Derfor har Lene tatt seg av index.html,
+        som inkluderer et slideshow med bilder, en oppslagstavle med scroll-funksjon og et vindu for Google Maps. Kine har tatt 
+        seg av info.html, som inneholder et sett med regler og et linket screenshot av en Facebookside (her skulle egentlig
+        diskusjonstavlen være). Daniel har hatt hovedansvaret for kontakt.html, hvor han har lagd en funksjon som lar brukeren
+        sende e-post direkte fra nettsiden og inn til styret. Sebastian har hatt hovedsansvar for galleri.html, som lar
+        brukeren trykke på bildene og velge hvem de vil se i stort format. Daniel og Sebastian har begge også jobbet med 
+        funksjonen for navigasjonsbaren som går igjen i alle html-filene. Hanne har tatt hovedansvaret for booking.html, 
+        hvor ulike tider kan bookes gjennom knappefunksjoner og input.</p>
+    <p>Ettersom gruppemedlemmene har varierende erfaring og kompetanse med programmering og webteknologi, har vi i stor grad 
+        vært involvert i hverandres ansvarsområder, og hjulpet hverandre. Særlig de to informatikkstudentene har hjulpet til med det meste
+        og kvalitetssikret kodingen, samt fasilitert mye av arbeidet på Git. De tre andre studentene, som har bakgrunn i handel
+        og økonomi, har da i større grad tatt for seg brukeraspektet ved nettsiden og sørget for at den kommuniserer på et tydelig vis.</p>
+        
+
+</body>
+</html>
