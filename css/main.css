@@ -140,23 +140,20 @@ Forsiden / index
 Bookingsiden
 */
 
- #bookingforklaring{
-     text-align: center;
-     color:#FFEEEE;
-     font-size: 14px;
-     background-color: var(--farge2);   
+.booking{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#bookingforklaring{
-    position: absolute;
-    left: 5%;
-    top: 21%;
-    font-size: 10px;
-}
-
-button{
-    color: white;
-    background-color: green;
+#bookinglister{
+    width: 75%;
+    display: block;
 }
 
 .bookingList{
@@ -164,11 +161,20 @@ button{
 }
 
 #vaskeriList{
-    margin-left: 200px;
+    margin-right: 40px;
 }
 
-#bakgårdList{
-    margin: left 10%;
+#bookingforklaring{
+    max-width: 50ch;
+    text-align: center;
+    color:#FFEEEE;
+    font-size: 14px;
+    background-color: var(--farge2);   
+}
+
+button{
+    color: white;
+    background-color: green;
 }
 
 
@@ -424,6 +430,18 @@ Responsiv design for alternative skjerm format.
 
 
 @media only screen and (max-width:940px) {
+
+    .bookingList{
+        display: table;
+        margin: 0 auto;
+    }
+
+    #vaskeriList{
+        margin-right: 0;
+        margin-bottom: 40px;
+        margin-top: 25px;
+    }
+
     .kontakt{
         flex-direction: column;
         align-items: center;
