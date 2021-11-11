@@ -412,8 +412,8 @@ Responsiv design for alternative skjerm format.
         padding: 0 25%;
     }
 
-    label.logo{
-        font-size: 2em;
+       label.logo{
+        font-size: 12px;
     }
 
     .oppslagstavle{
@@ -504,5 +504,13 @@ Responsiv design for alternative skjerm format.
         left: 5%;
         top: 21%;
         font-size: 10px;
+    }
+    
+        nav a{
+        font-size: 10px;
+    }
+
+    footer {
+        visibility: hidden;
     }
 }
